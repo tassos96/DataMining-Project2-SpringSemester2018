@@ -1,0 +1,186 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps - pygmaps </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+<script type="text/javascript">
+	function initialize() {
+		var centerlatlng = new google.maps.LatLng(53.421776, -6.391305);
+		var myOptions = {
+			zoom: 14,
+			center: centerlatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+var PolylineCoordinates = [
+new google.maps.LatLng(53.421276, -6.388207),
+new google.maps.LatLng(53.421276, -6.388207),
+new google.maps.LatLng(53.421276, -6.388207),
+new google.maps.LatLng(53.421997, -6.389615),
+new google.maps.LatLng(53.421776, -6.391305),
+new google.maps.LatLng(53.421776, -6.391305),
+new google.maps.LatLng(53.421776, -6.391305),
+new google.maps.LatLng(53.421478, -6.391720),
+new google.maps.LatLng(53.420452, -6.393516),
+new google.maps.LatLng(53.419762, -6.391953),
+new google.maps.LatLng(53.419762, -6.391786),
+new google.maps.LatLng(53.419743, -6.389537),
+new google.maps.LatLng(53.417702, -6.386249),
+new google.maps.LatLng(53.417702, -6.386249),
+new google.maps.LatLng(53.417641, -6.386210),
+new google.maps.LatLng(53.416428, -6.385286),
+new google.maps.LatLng(53.416012, -6.383823),
+new google.maps.LatLng(53.414577, -6.385795),
+new google.maps.LatLng(53.413448, -6.386530),
+new google.maps.LatLng(53.412567, -6.382768),
+new google.maps.LatLng(53.411629, -6.378541),
+new google.maps.LatLng(53.410179, -6.373672),
+new google.maps.LatLng(53.409256, -6.370855),
+new google.maps.LatLng(53.408882, -6.368898),
+new google.maps.LatLng(53.410084, -6.368629),
+new google.maps.LatLng(53.410831, -6.368185),
+new google.maps.LatLng(53.411488, -6.367337),
+new google.maps.LatLng(53.412567, -6.365870),
+new google.maps.LatLng(53.412567, -6.365870),
+new google.maps.LatLng(53.414280, -6.364185),
+new google.maps.LatLng(53.414101, -6.363130),
+new google.maps.LatLng(53.413376, -6.361872),
+new google.maps.LatLng(53.412155, -6.360121),
+new google.maps.LatLng(53.410984, -6.359450),
+new google.maps.LatLng(53.409359, -6.358517),
+new google.maps.LatLng(53.408237, -6.357875),
+new google.maps.LatLng(53.408237, -6.357875),
+new google.maps.LatLng(53.408237, -6.357875),
+new google.maps.LatLng(53.407166, -6.357307),
+new google.maps.LatLng(53.406712, -6.355762),
+new google.maps.LatLng(53.405743, -6.356613),
+new google.maps.LatLng(53.404716, -6.357647),
+new google.maps.LatLng(53.404129, -6.357175),
+new google.maps.LatLng(53.402767, -6.356082),
+new google.maps.LatLng(53.400986, -6.353962),
+new google.maps.LatLng(53.399033, -6.352241),
+new google.maps.LatLng(53.398403, -6.350033),
+new google.maps.LatLng(53.397984, -6.348332),
+new google.maps.LatLng(53.397655, -6.344684),
+new google.maps.LatLng(53.397369, -6.340720),
+new google.maps.LatLng(53.397877, -6.337166),
+new google.maps.LatLng(53.398048, -6.333415),
+new google.maps.LatLng(53.397621, -6.332111),
+new google.maps.LatLng(53.396103, -6.329763),
+new google.maps.LatLng(53.394962, -6.326760),
+new google.maps.LatLng(53.393967, -6.323744),
+new google.maps.LatLng(53.392719, -6.322047),
+new google.maps.LatLng(53.390774, -6.319468),
+new google.maps.LatLng(53.390247, -6.317236),
+new google.maps.LatLng(53.389908, -6.315105),
+new google.maps.LatLng(53.389660, -6.314364),
+new google.maps.LatLng(53.389217, -6.312522),
+new google.maps.LatLng(53.390072, -6.311381),
+new google.maps.LatLng(53.390015, -6.310797),
+new google.maps.LatLng(53.389854, -6.308141),
+new google.maps.LatLng(53.389854, -6.306736),
+new google.maps.LatLng(53.389877, -6.302633),
+new google.maps.LatLng(53.389877, -6.302633),
+new google.maps.LatLng(53.390026, -6.300519),
+new google.maps.LatLng(53.389263, -6.299429),
+new google.maps.LatLng(53.388390, -6.298210),
+new google.maps.LatLng(53.387554, -6.297650),
+new google.maps.LatLng(53.387108, -6.297232),
+new google.maps.LatLng(53.387081, -6.297290),
+new google.maps.LatLng(53.386562, -6.297085),
+new google.maps.LatLng(53.385490, -6.295705),
+new google.maps.LatLng(53.383961, -6.293784),
+new google.maps.LatLng(53.383675, -6.293398),
+new google.maps.LatLng(53.383308, -6.292912),
+new google.maps.LatLng(53.381805, -6.290812),
+new google.maps.LatLng(53.381390, -6.290101),
+new google.maps.LatLng(53.379959, -6.288364),
+new google.maps.LatLng(53.378902, -6.287653),
+new google.maps.LatLng(53.378017, -6.287527),
+new google.maps.LatLng(53.375973, -6.286414),
+new google.maps.LatLng(53.375275, -6.286107),
+new google.maps.LatLng(53.374779, -6.285891),
+new google.maps.LatLng(53.373119, -6.284075),
+new google.maps.LatLng(53.371731, -6.281332),
+new google.maps.LatLng(53.370075, -6.278614),
+new google.maps.LatLng(53.368717, -6.275164),
+new google.maps.LatLng(53.367920, -6.273254),
+new google.maps.LatLng(53.367355, -6.271653),
+new google.maps.LatLng(53.365364, -6.271671),
+new google.maps.LatLng(53.365093, -6.271714),
+new google.maps.LatLng(53.364285, -6.270284),
+new google.maps.LatLng(53.363605, -6.267405),
+new google.maps.LatLng(53.362907, -6.264375),
+new google.maps.LatLng(53.362225, -6.261484),
+new google.maps.LatLng(53.362015, -6.260628),
+new google.maps.LatLng(53.361748, -6.259529),
+new google.maps.LatLng(53.360336, -6.260718),
+new google.maps.LatLng(53.360065, -6.260980),
+new google.maps.LatLng(53.359898, -6.261138),
+new google.maps.LatLng(53.359264, -6.261734),
+new google.maps.LatLng(53.358669, -6.262354),
+new google.maps.LatLng(53.358009, -6.263196),
+new google.maps.LatLng(53.357685, -6.263593),
+new google.maps.LatLng(53.355846, -6.265422),
+new google.maps.LatLng(53.353008, -6.268261),
+new google.maps.LatLng(53.352261, -6.267189),
+new google.maps.LatLng(53.352142, -6.265246),
+new google.maps.LatLng(53.354206, -6.263420),
+new google.maps.LatLng(53.352112, -6.261073),
+new google.maps.LatLng(53.352112, -6.261073),
+new google.maps.LatLng(53.352112, -6.261073),
+new google.maps.LatLng(53.352112, -6.261073),
+new google.maps.LatLng(53.352142, -6.261086),
+new google.maps.LatLng(53.352619, -6.261269),
+new google.maps.LatLng(53.352757, -6.260983),
+new google.maps.LatLng(53.352757, -6.260983),
+new google.maps.LatLng(53.352757, -6.260983),
+new google.maps.LatLng(53.352757, -6.260983),
+new google.maps.LatLng(53.353001, -6.258966),
+];
+
+var Path = new google.maps.Polyline({
+clickable: false,
+geodesic: true,
+path: PolylineCoordinates,
+strokeColor: "#6495ED",
+strokeOpacity: 1.000000,
+strokeWeight: 5
+});
+
+Path.setMap(map);
+
+
+var PolylineCoordinates = [
+new google.maps.LatLng(53.421276, -6.388207),
+new google.maps.LatLng(53.419762, -6.391786),
+new google.maps.LatLng(53.408237, -6.357875),
+new google.maps.LatLng(53.408237, -6.357875),
+new google.maps.LatLng(53.408237, -6.357875),
+new google.maps.LatLng(53.389908, -6.315105),
+new google.maps.LatLng(53.389660, -6.314364),
+new google.maps.LatLng(53.389854, -6.308141),
+new google.maps.LatLng(53.389854, -6.306736),
+];
+
+var Path = new google.maps.Polyline({
+clickable: false,
+geodesic: true,
+path: PolylineCoordinates,
+strokeColor: "#FF0000",
+strokeOpacity: 1.000000,
+strokeWeight: 5
+});
+
+Path.setMap(map);
+
+
+	}
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+	<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>
